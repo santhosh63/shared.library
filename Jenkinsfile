@@ -1,5 +1,5 @@
 @Library('pipeline-library-demo')_
-node () {
+node {
 def mvnHome
     // checkout scm
     // sh ("git checkout master && git pull origin master")
