@@ -11,9 +11,9 @@ node {
     }
     stage ('Build') {
         if ('isUnix()') {
-            sh "'${mvnHome}/bin/mvn' -Dmaven.clean.failOnError=false clean package"
+            sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean install"
         } else {
-            bat "'${mvnHome}/bin/mvn' -Dmaven.clean.failOnError=false clean package"
+            bat "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean install"
         }
     }
     
