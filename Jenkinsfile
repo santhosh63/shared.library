@@ -16,12 +16,7 @@ node {
             bat "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore compile"
         }
     }
-    stage('Unit Testing') {
-      echo '** Starting Unit Testing Phase **'
-      junit '**/target/surefire-reports/TEST-*.xml'
-      archive 'target/*.jar'
-      echo '** Unit Tesing finished **'
-      }
+    
 stage('Demo') 
 {  
 echo 'Hello World'
