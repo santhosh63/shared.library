@@ -1,3 +1,7 @@
+@Library("pipeline-library-demo") _
+Jenkinsfile {
+    ProjectName = "empty"
+}
 node {
    def mvnHome
     // checkout scm
