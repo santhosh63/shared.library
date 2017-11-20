@@ -1,4 +1,5 @@
 @Library('pipeline-library-demo')_
+node () {
 def mvnHome
     // checkout scm
     // sh ("git checkout master && git pull origin master")
@@ -18,5 +19,5 @@ stage('Demo')
 {  
 echo 'Hello World'
 sayHello 'Dave'
-
+}
 }
